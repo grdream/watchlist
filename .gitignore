@@ -1,0 +1,76 @@
+```
+# Environment
+.env
+.env.local
+.env.*
+
+# Dependencies
+vendor/
+node_modules/
+
+# Laravel-specific
+bootstrap/cache/
+storage/logs/
+storage/framework/
+public/storage/
+composer.lock
+
+# Build artifacts
+dist/
+build/
+coverage/
+htmlcov/
+*.log
+*.tmp
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Cache
+__pycache__/
+.mypy_cache/
+.pytest_cache/
+.phpunit.result.cache
+
+# Compiled
+*.pyc
+*.class
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.a
+*.out
+
+# Compressed
+*.zip
+*.gz
+*.tar
+*.tgz
+*.bz2
+*.xz
+*.7z
+*.rar
+*.zst
+*.lz4
+*.lzh
+*.cab
+*.arj
+*.rpm
+*.deb
+*.Z
+*.lz
+*.lzo
+*.tar.gz
+*.tar.bz2
+*.tar.xz
+*.tar.zst
+```
