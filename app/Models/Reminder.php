@@ -61,4 +61,12 @@ class Reminder extends Model
     {
         return $this->belongsTo(Episode::class);
     }
+
+    /**
+     * Get the episodes for this reminder (via show).
+     */
+    public function episodes()
+    {
+        return $this->hasManyThrough(Episode::class, Show::class, 'id', 'show_id', 'show_id', 'id');
+    }
 }

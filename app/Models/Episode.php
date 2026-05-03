@@ -95,4 +95,20 @@ class Episode extends Model
         return $query->where('air_datetime', '<=', now()->addMinutes($minutes))
             ->where('air_datetime', '>', now());
     }
+
+    /**
+     * Get the reminder associated with this episode (via show).
+     */
+    public function reminder()
+    {
+        return $this->hasOne(Reminder::class, 'show_id', 'show_id');
+    }
+
+    /**
+     * Get air_date attribute from air_datetime.
+     */
+    public function getAirDateAttribute()
+    {
+        return $this->air_datetime?->toDateString();
+    }
 }
